@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" href="tab_icon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--[if !mso]><!-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Project - Deals</title>
+	
+	
+<style>
+    
+/* Basics */
+body {
+	margin: 0 !important;
+	padding: 0;
+	background-color: #ffffff;
+}
+table {
+	border-spacing: 0;
+	font-family: sans-serif;
+	color: #333333;
+}
+td {
+	padding: 0;
+}
+img {
+	border: 0;
+}
+div[style*="margin: 16px 0"] { 
+	margin:0 !important;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+.webkit {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.outer {
+	Margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+.inner {
+	padding: 10px;
+}
+    
+.content_section .inner{
+        padding: 46px;
+}
+    
+.contents {
+	width: 100%;
+}
+p {
+	Margin: 0;
+}
+a {
+	color: #ee6a56;
+	text-decoration: underline;
+}
+.h1 {
+	font-size: 21px;
+	font-weight: bold;
+	Margin-bottom: 18px;
+}
+.h2 {
+	font-size: 18px;
+	font-weight: bold;
+	Margin-bottom: 12px;
+}
+.full-width-image img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+}
+    
+/*header layout*/
+    
+    
+/* Left sidebar layout */
+.header_section {
+	text-align: center;
+	font-size: 0;
+    background: #2e2e2e;
+    padding: 20px 0;
+}
+.header_section .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header_section .left {
+	max-width: 300px;
+}
+.header_section .right {
+	max-width: 300px;
+}
+.header_section .img {
+	width: 100%;
+	max-width: 80px;
+	height: auto;
+}
+.header_section .contents {
+	font-size: 17px;
+	text-align: center;
+    color: #dedede;
+}   
+
+
+
+/* One column layout */
+.one-column .contents {
+	text-align: left;
+    padding: 30px;
+}
+
+/*Two column layout*/
+.content_section {
+	text-align: center;
+	font-size: 0;
+}
+.content_section .column {
+	width: 100%;
+	max-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+.content_section .contents {
+	font-size: 14px;
+	text-align: left;
+}
+.content_section img {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+}
+.content_section .text {
+	padding-top: 10px;
+    font-size: 15px;
+}
+    
+.img_shrink{
+    padding: 25px;
+}
+    
+.img_title{
+   font-weight: bold;
+   display: block;
+   font-size: 20px;
+   padding-bottom: 10px;
+   color: #272727;
+}
+    
+.order_content{
+   text-align: center; 
+   padding: 20px 0;
+}
+    
+.order_content .price{
+    font-size: 30px;
+    padding-top: 20px;
+}
+    
+.order_btn{
+   padding: 10px 20px;
+   background: #72d286;
+   font-weight: bold;
+   color: white;
+   border: none;
+   margin-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+	text-align: center;
+	font-size: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.three-column .column {
+	width: 100%;
+	max-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+.three-column img {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+.three-column .contents {
+	font-size: 14px;
+	text-align: center;
+}
+ 
+.three-column .h2{
+   text-align: center;
+   padding-left: 30px;
+}
+.three-column .contents ul{
+   list-style: none;
+}
+    
+.three-column .text {
+	padding-top: 10px;
+}
+    
+.footer_section .column {
+	width: 100%;
+	max-width: 600px;
+	display: inline-block;
+    text-align: center;
+}
+    
+    
+.footer_section .inner{
+    padding: 30px;
+}
+    
+        .footer_credits{
+            width: 100%;
+            background: #000;
+            height: auto;
+            text-align: center;
+            margin-top: 10%;
+            margin: 0;
+            padding: 1.5% 0 1% 0;
+        }
+
+        .footer_credits p{
+            font-family: monospace;
+            font-size: 20px;
+            color: aliceblue;
+        }
+
+        .footer_credits i{
+            color: #801f1f;
+        }
+
+        .footer_credits span{
+            color: #ffd400;
+        }
+
+    
+/*Media Queries*/
+@media screen and (max-width: 400px) {
+	.content_section .column,
+	.three-column .column {
+		max-width: 100% !important;
+	}
+	.content_section img {
+		max-width: 100% !important;
+	}
+	.three-column img {
+		max-width: 50% !important;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+	.three-column .column {
+		max-width: 33% !important;
+	}
+	.content_section .column {
+		max-width: 50% !important;
+	}
+}
+    
+       
+</style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<center class="wrapper">
+		<div class="webkit">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center">
+			<tr>
+			<td>
+			<![endif]-->
+			<table class="outer" align="center">
+			
+<!--header section-->
+      		   <tr>
+					<td class="header_section">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="100">
+						<![endif]-->
+						<div class="column left">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<img src="https://lh3.googleusercontent.com/wXDQEyRceHsLD5iHhPTl6VWxvtBZW7G2MGa8v07E7JcKc7JEhxFRa3vKmSY5JN1vCrA-ZHifWjlad3wHK5nLjkWKo06gXOImLUsXv7lH4hPuDX5DiAT-aAsuaz-e9U_ZiNla3LcQ9lx7QHUvL51hPDi-H3ecmFOviAIpM3bd08SYjIpLIMc1msbnVtFjIkupDxlV8b98kxywnJEg6iInrRGPAWzc0yEoeRQJZcLpCN6TWcFb7mT98Beh9brDx_DjsgWHKEEiJYUbzuOjxBztJ-DxAd9OuAbX7f4I2-Q7vKAVwweRU0gG0f2ck-0EL4oSrRw-J8vEUXt6yZdG-H1IBXKl0IUc36GCj3WsSQHda80TYwyjYZbMhJvhs6LPqEh54-IZK_oLpbxr6ZxMHWx3ZwlN8AZlF26En6bcRJQ-tYXWPC3sIk_cARY9BHXpY9cdzEtUmklr7HhtDwUrB2a3-4v6wxbXz3hBHubYhd944deWZQptDdX3WBmnf0ca1sggf92Wqa64oQf1OEGUr5998AsdViT6IvZ4K-rc812LI5GiujQOY7LrB0N5a3fh-MiRMES5NJuvban6_w8R_2CRuIZ1FaUdUUhF_sc=w106-h26-no" width="80" alt="" />
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="500">
+						<![endif]-->
+						<div class="column right">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										World's #1 Deals website.
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+			
+<!--header section end-->
+			
+			
+			
+			
+<!--banner section-->
+				<tr>
+					<td class="full-width-image">
+						<img src="https://lh3.googleusercontent.com/xMFTxdS_ROwanbLugFLuWw-9kji6I9ciBvL0fleKRYwZXk_CQINeM-hvoxjKo05ahREd2iEVjgTg1ELyquZRFrmeL9CXqABAaaNIkO-8TaJoLowgE4C3S-ussTJQFALRPgY0HLLDsGFfiHzEVu-WZ9Jkwehsl_nldLHimG48wnrgTVfK7luez3clphVHkKsYla7kF42jgG-HgsTRCGJumf1jt_LO2mOZlsQephjmB4OANPIvP6ZZSriQibZ0L6ErRU9qQ2IaaGXbHA-cxYmswJwZ20Qs2nrKkgyr5nv2lRa-pGXkZ_RLySmgaS77xUbE0UtTeQKPgV_dT2J5U3GnB85WkjLlKW5huQsT1hMw9Zu0xCjqDdUPjBpY2RTQaUGFFpfSPnyF9e_OV6QEwRwpvhoFTkY8B1w9NI3flmS4rS57clKsqEYSXst2MOOW1H_ptvVH6oRMq_BTrsidJs7fnhKnVyepYBP5c6CVkpxPN6GcQ4mExge_gL4gBrSuNY2zdiUId2HZ7W9BsM4wAMHNzmbik2edzBBZdQDQtCalmXpRJ-wkw25-9-SDmAifSLHsFpmXPDcFNTizV5RxiaRLb-tsOOyKGRaqouc=w600-h244-no" width="600" alt="" />
+					</td>
+				</tr>
+<!--banner section end-->
+            
+<!--one_column space-->
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner contents">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+<!--one_column space end-->
+				
+				
+<!--content section-->
+				<tr>
+					<td class="content_section">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="img_shrink">
+													<img src="https://lh3.googleusercontent.com/fk4uBPGOIAnbULhvXXABgmlx2iiqve0-qksvSpXnW3ohR_KtVfXwhBaOJXist3dcdsHA8-vXEXr10EcA_h3QlfJf3vdRLSu-yr2g-Ii4r_xlUg2hcg6ZY8xv5STkdUp7myc0WamSpW1-bWV1VfWV9fskEXpfAlp7b-7Why4ies3jJg1wzLadtbzI1IdLB9UCTMcx5mmVV45Kcn1B9o5PFRJfCBLksPftTiLohRE50gX9qOXzUCcG7PBuFqSKVj6AFssoo7GW06vNopjAplJv3XTJmKXAK703454FePgflUVPYxOcfJLunQLUSsQRdImYOJzLCl4UuGd4Ij9dcf6P4U_y_itZ9KPhNB4Lm3yKKEhFB-Qx08r9AcGzh-aeqq2o3yPEft0OTz-4Xfb-GFfklGrptHVvnDy9MHX_TDJVC9qjAqtkQSfuP7kYi3_lCHgSvIzSqdB6V26AmaihJpwplnBFpywg9QrUINR7q4v_lsy-Jxlf7F6PF1hwvivGwmJJQ5I6_LyQ6SctGqByS08AXfJJrf93gQncR-gUvUdHpJLzB1ghezQxscdQTxhMVodUJtWSUIqugUGv6a98mFT27rGViG6GAeOgTZU=w157-h108-no" width="280" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+												 <span class="img_title">HIKING SHOES</span>
+													Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+												</td>
+											</tr>
+											
+											<tr>
+												<td class="order_content">
+												   <p class="price">$300</p>
+												   <button class="order_btn">Buy Now</button>
+												</td>
+                                            </tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="img_shrink">
+													<img src="https://lh3.googleusercontent.com/Sjhm7oBTzawQPnbpVcnSokjvUIjsObrGQeq-0E8ojkVlJA20yOp0Uyy07r1kBH1NqHl02X3J2TUNqp8bIn0BLSeqO1X1nfbXcQtQOL_kiR_-uUNNZc7mSzCDk1J5wqrz-BF5JvAcCkuKsJVCrCsjNyL8NKb173Elzad649V1vL4oJaH59rEdEh_dCGzDVt9cvQP759-HEGpeIIJ-42jv7mpMHRbkoe4YHfMBtApYYQ2N8Z9pxgzbFJ9k6_4WulivmME4bxHkEhwV2vqf-KGEWU3h7_XBwaazboSXyOzXaYX4dTsRiswmWTAK-KBZvg7IfkuIYrMXEVq5c7lZ5rwYhyqWxotalhU6IwUFWZLPzADSAFjXTqkFefLmtI9RRp5lWJgkpY5YCJT1AMf3pOxjzdbIFDNSJHRBwCQ8FPNdDTwgLozMDtPwbe8Ue7je17gK_ctrPIJ17VSGNBNXxGRBna8Qg16alZ06PKO36qZ8UFWom0i-PQfzd2A2A8IRL7G2SpfVen8Zdc6qqCgL-FqQjf2cFesy-TSP-wd0_xLCDsn613egk_f_W2fPGXQnjorIOojk2pc9jc7yBzQD9fJlOLmDZkYaK0UtG2o=w157-h108-no" width="280" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+												 <span class="img_title">HIKING SHOES</span>
+													Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.
+												
+												</td>
+											</tr>
+											
+								            <tr>
+												<td class="order_content">
+												   <p class="price stuff">$300</p>
+												   <button class="order_btn stuff">Buy Now</button>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+<!--content section end-->
+        
+<!--bottom section-->
+				<tr>
+					<td class="three-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<p class="h2">Category</p>
+									 <ul>
+										     <li>Running Shoes</li>
+										     <li>Sneakers</li>
+										     <li>Boots</li>
+										     <li>Loafers</li>
+										     <li>Flats</li>
+										 </ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<p class="h2">Brands</p>
+								         <ul>
+										     <li>Adidas</li>
+										     <li>Puma</li>
+										     <li>Fila</li>
+										     <li>Reebok</li>
+										     <li>Woodland</li>
+										 </ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<p class="h2">Unisex</p>
+										 <ul>
+										     <li>Formals</li>
+										     <li>Casual Shoes</li>
+										     <li>Sports Shoes</li>
+										     <li>Sports Sandals</li>
+										     <li>Flip-Flops</li>
+										 </ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				
+				
+<!--footer -->
+        
+                <tr>
+                    <td class="footer_section">
+
+                      <div class="column">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner content">
+                                    <i class="footer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's.</i>
+                                </td>
+                            </tr>
+                        </table>
+                      </div>
+                      <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </td>
+                </tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</div>
+	</center>
+	
+	   <div class="footer_credits">
+        <div class="container-fluid">
+               <div class="row">
+                 <div class="col-sm-12">
+                        <div id="credits">   
+                         <p>Developed by - <span>Tiyam Foyraz</span>.</p>
+                       </div>
+                </div>
+             </div>
+         </div>
+       </div>
+</body>
+</html>
